@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote o Cacá!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .content img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+        .cta {
+            background-color: #32cd32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .cta:hover {
+            background-color: #228b22;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adote o Cacá!</h1>
+    <p>Ajude o Cacá a encontrar um novo lar cheio de amor!</p>
+</header>
+
+<section>
+    <h2>Sobre o Cacá</h2>
+    <p>O Cacá é um cachorrinho de 7 meses que foi atropelado, mas após cuidados e uma cirurgia, ele está se recuperando muito bem! Ele está em busca de um lar onde seja muito amado. Ele já será entregue vacinado e castrado!</p>
+</section>
+
+<section>
+    <h2>Galeria de Fotos</h2>
+    <div class="content">
+        <img src="foto1.jpg" alt="Cacá">
+        <img src="foto2.jpg" alt="Cacá">
+        <img src="foto3.jpg" alt="Cacá">
+    </div>
+</section>
+
+<section>
+    <h2>Vídeo do Cacá</h2>
+    <div style="text-align: center;">
+        <video width="320" height="240" controls>
+            <source src="cacavideo.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
+    </div>
+</section>
+
+<section>
+    <div class="cta">
+        <p>Está interessado em adotar o Cacá? Entre em contato!</p>
+    </div>
+</section>
+
+<section class="contact-form">
+    <h2>Formulário de Contato</h2>
+    <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+</body>
+</html>
